@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            margin: 0;
+            background-image: url(./background2.jpg);
+            background-position:center;
+        }
+        ul{
+            text-transform:uppercase;
+            list-style-type: none;
+            background-color: rgba(11,11,11,0.5);
+            border-radius: 10%;
+            display: flex;
+            color:white;
+            justify-content: space-evenly;
+            margin-left: 5% ;
+            margin-right: 5%;
+        }
+        .bloks{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .bloks div{
+            width: 30%;
+            padding: 2%;
+            background-color: white;
+        }
+        img{
+            width: 100%;
+        }
+        .first{
+            color:white;
+            text-align: center;
+        }
+        .last{
+            border-bottom-color: white ;
+            text-align: center;
+            background-color: rgba(250, 247, 247, 0.2);
+        }
+        .list li:hover{
+           color:yellow;
+        }
+        @media screen and (max-width:760px){
+            .bloks{
+                flex-direction: column;
+            }
+            .bloks div{
+                width: 80%;
+                margin-top:10px;
+            }
+            .list{
+                display: none;
+            }
+            button{
+                background-color: green;
+                border: none;
+                border-radius: 20%;
+            }
+            body{
+                background-repeat: no-repeat;    
+                background-size:cover;
+            }
+        }
+    </style>
+</head>
+<body>
+         <div class="first">
+        <h1>inspiration это лёгкий и эффективный шаблон</h1>
+        <h1>который сделает ваш сайт интересным и завлекательным</h1>
+    </div>
+    <div>
+        <ul class="list">
+            <li>главная</li>
+            <li>продукция</li>
+            <li>о компании</li>
+            <li>акции</li>
+            <li>партнерам</li>
+            <li>контакты</li>
+            <li>  <form action="#">
+            <input type="text" name="text_1" placeholder="поиск по сайту">
+        </form></li>
+        </ul>
+    </div>
+    <div class="bloks">
+        <div class="bloks_1">
+            <img src="img1.jpg" alt="img1">
+            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quod delectus repellendus corrupti, asperiores eum architecto cupiditate cumque deserunt perspiciatis iste saepe quam incidunt repudiandae animi tenetur consequuntur voluptates blanditiis?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint beatae odio nobis unde exercitationem laudantium ullam fugit rem ducimus tempore, dolorem, amet provident blanditiis maiores ad recusandae officiis dolor alias.</p>
+            <button class="knopka">подробнее</button>
+        </div>
+        <div class="bloks_2">
+            <img src="img2.jpg" alt="img2">
+            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quod delectus repellendus corrupti, asperiores eum architecto cupiditate cumque deserunt perspiciatis iste saepe quam incidunt repudiandae animi tenetur consequuntur voluptates blanditiis?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint beatae odio nobis unde exercitationem laudantium ullam fugit rem ducimus tempore, dolorem, amet provident blanditiis maiores ad recusandae officiis dolor alias.</p>
+            <button class="knopka">подробнее</button>
+        </div>
+        <div class="bloks_3">
+            <img src="img3.jpg" alt="img3">
+            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quod delectus repellendus corrupti, asperiores eum architecto cupiditate cumque deserunt perspiciatis iste saepe quam incidunt repudiandae animi tenetur consequuntur voluptates blanditiis?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint beatae odio nobis unde exercitationem laudantium ullam fugit rem ducimus tempore, dolorem, amet provident blanditiis maiores ad recusandae officiis dolor alias.</p>
+            <button class="knopka">подробнее</button>
+        </div>
+    </div>
+    <div class="last">
+        <p>Copyright 2021.</p>
+    </div>
+</body>
+</html>
